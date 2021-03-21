@@ -1,0 +1,16 @@
+<rasty specificationClass="Pistas\UI\pages\pistas\modificar\PistaModificar" templateLocation="pages/pistas/modificar/PistaModificar.htm"> 
+
+	<param name="layoutType" value="str:PistasMetroLayout" />
+	<param name="pistaOid" value="get:oid" />
+
+
+	<component id="pistaForm" type="PistaForm">
+		<param name="legend" value="msg:pista.modificar.legend" />
+		<param name="action" value="linkActionModificarPista" />
+		<param name="method" value="str:post" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="pista" value="pista" />
+	</component>
+	
+</rasty>

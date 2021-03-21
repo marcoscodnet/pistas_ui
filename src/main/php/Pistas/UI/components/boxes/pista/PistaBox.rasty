@@ -1,0 +1,8 @@
+<rasty specificationClass="Pistas\UI\components\boxes\pista\PistaBox" templateLocation="PistaBox.htm">
+
+	<param name="pistaOid" value="get:pistaOid" />
+
+
+	
+	
+</rasty>

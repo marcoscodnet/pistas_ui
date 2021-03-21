@@ -1,0 +1,126 @@
+<!-- BEGIN:main -->
+<script>
+
+function submitBuscarSinSeguridad(webpath, filterId, resultId){
+
+	var formData = $( filterId ).serialize();
+	
+	//$( resultId ).fadeTo("fast", 0.33);
+	right = ($(window).width() / 2) - (32);		
+	htmlSearching = "<div style='position:absolute; right:" + right + "px;top:40px;'><img src='" + webpath + "/css/images/loading.gif' /></div>";
+	$( resultId ).html($( resultId ).html() + htmlSearching);
+		
+	$.ajax({
+		  url: webpath + "EntityGridSinSeguridad.rasty",
+		  type: "POST",
+		  data: formData,
+		  cache: false,
+		  success: function(content){
+		    
+			$( resultId ).html(content);
+			//$( resultId ).fadeTo("fast", 1);
+			
+		  }
+		});	
+}
+
+
+function submitBuscarPistas(){
+
+	$( "#page" ).val( 1 );
+	
+	//buscarPistas();
+
+	submitBuscarSinSeguridad("{WEB_PATH}", "#pistas_filter{id}", "#{resultDiv}");
+}
+
+function ordenarPistas(name, type){
+
+	$( "#orderBy" ).val(name);
+	$( "#orderByType" ).val(type);
+	
+	submitBuscarSinSeguridad("{WEB_PATH}", "#pistas_filter{id}", "#{resultDiv}");
+}
+
+function paginarPistas(page){
+	$( "#page" ).val(page);
+
+	submitBuscarSinSeguridad("{WEB_PATH}", "#pistas_filter{id}", "#{resultDiv}");
+}
+
+function seleccionarPista(event, pistaId, rowId, checkboxId){
+
+
+	/* muestro un pop con las opciones sobre el pista */
+	
+	gotoLink("{linkSeleccionar}?oid="+pistaId);
+	
+}
+
+function eliminarCallback(data){
+
+	console.log( data["info"] );
+	submitBuscarSinSeguridad("{WEB_PATH}", "#pistas_filter{id}", "#{resultDiv}");
+}
+
+
+$(document).ready(function(){
+
+	submitBuscarSinSeguridad("{WEB_PATH}", "#pistas_filter{id}", "#{resultDiv}");
+
+	 $(".item input").keyup(function (e) {
+         if (e.keyCode == 13) {
+        	 $( '#page' ).val( 1 );
+             // función para capturar el enter en el filtro default.
+        	 submitBuscarSinSeguridad("{WEB_PATH}", "#pistas_filter{id}", "#{resultDiv}");
+         }
+     });
+	
+});
+
+
+</script>
+
+
+
+<div id="divPistas{id}Toggle2">
+<form class="cuentas_form" id="pistas_filter{id}" onsubmit="return false;">
+
+		
+	
+	<fieldset>
+		
+		<legend id="legend_buscar{id}">{legend}</legend>		
+
+
+		<div class="item" style="min-width: {minWidth};">
+		    <label for="pistaOArtista">{lbl_nombre}:</label>
+	    	<rasty id="pistaOArtista" />
+		</div>
+		
+		
+	</fieldset>
+	<input type="hidden" name="model" value="{model}">
+	<input type="hidden" name="filter" value="{filter}">
+	<input type="hidden" name="sortCallback" value="ordenarPistas">
+	<input type="hidden" name="paginationCallback" value="paginarPistas">
+	<input type="hidden" name="selectRowCallback" value="{selectRowCallback}">
+	<input type="hidden" id="orderBy" name="orderBy">
+	<input type="hidden" id="orderByType" name="orderByType" value="ASC">
+	<input type="hidden" id="page" name="page" value="1">
+
+</form>
+<form  class="cuentas_form" id="buttons{id}">
+	<fieldset class="tblFooters">
+	
+		<button id="input_submit_ajax_Pista{id}"  type="button"  onclick="javascript: $( '#page' ).val( 1 ); submitBuscarSinSeguridad('{WEB_PATH}', '#pistas_filter{id}', '#{resultDiv}');"><i class="icon-search on-left"></i>{lbl_submit}</button>
+		
+		
+		<button id="input_submit_ajax_Pista{id}"  type="button"  onclick="javascript: window.location.href='http://localhost/pistasprofesional/'"><i class="icon-close on-left"></i>{lbl_volver}</button>
+		
+		
+	
+	</fieldset>
+</form>	
+</div>
+<!-- END:main -->

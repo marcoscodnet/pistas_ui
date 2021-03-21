@@ -1,0 +1,14 @@
+<rasty specificationClass="Pistas\UI\pages\artistas\agregar\ArtistaAgregar" templateLocation="pages/artistas/agregar/ArtistaAgregar.htm"> 
+
+	<param name="layoutType" value="str:PistasMetroLayout" />
+
+	<component id="artistaForm" type="ArtistaForm">
+		<param name="legend" value="msg:artista.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionAgregarArtista" />
+		<param name="method" value="str:post" />
+		<param name="artista" value="artista" />
+	</component>
+	
+</rasty>

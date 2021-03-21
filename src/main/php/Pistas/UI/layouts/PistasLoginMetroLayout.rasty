@@ -1,0 +1,6 @@
+<rasty specificationClass="Pistas\UI\layouts\PistasLoginMetroLayout" templateLocation="PistasLoginMetroLayout.htm">
+
+<component id="footer" type="FooterPistas">
+	</component>
+
+</rasty>

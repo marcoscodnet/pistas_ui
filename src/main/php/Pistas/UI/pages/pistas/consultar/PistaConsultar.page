@@ -1,0 +1,15 @@
+<rasty specificationClass="Pistas\UI\pages\pistas\consultar\PistaConsultar" templateLocation="pages/pistas/consultar/PistaConsultar.htm"> 
+
+	<param name="layoutType" value="str:PistasMetroLayout" />
+
+	<param name="pistaOid" value="get:pistaOid" />
+	
+	<param name="error" value="get:error" />
+	
+	
+	
+	
+	<component id="pista" type="PistaBox">
+		<param name="pista" value="pista" />
+	</component>
+</rasty>

@@ -1,0 +1,13 @@
+<rasty specificationClass="Pistas\UI\components\form\uploadFile\UploadFile" templateLocation="UploadFile.htm">
+
+	<param name="uploadPath" value="get:uploadPath" />
+	
+	<param name="uploadWebPath" value="get:uploadWebPath" />
+	
+	<param name="uploadSuccessCallback" value="get:uploadSuccessCallback" />
+	
+	
+	
+	
+	
+</rasty>

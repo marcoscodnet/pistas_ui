@@ -1,0 +1,13 @@
+<rasty specificationClass="Pistas\UI\pages\artistas\Artistas" templateLocation="pages/artistas/Artistas.htm"> 
+
+	<param name="layoutType" value="str:PistasMetroLayout" />
+
+	<component id="artistasFilter" type="ArtistaFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:artista.buscar" />
+		<param name="legendAgain" value="msg:artista.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

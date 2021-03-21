@@ -1,0 +1,35 @@
+<!-- BEGIN: main-->
+<script>
+$(document).ready(function() {
+	//alert($("#presupuestoOid").val());
+	if($("#pistaOid").val()){
+		alert($("#pistaOid").val());
+	}
+})
+</script>
+<style>
+</style>
+<!-- BEGIN: msg_exito -->
+<fieldset class="ui-state-error">
+	{msgExito}	
+</fieldset>
+<!-- END: msg_exito -->
+<div class="grid" >
+
+    <div id="pistas_filtros" class="grid_filters">
+        
+        <rasty id="pistasFilter" />
+        
+    </div>
+
+	<br class="clear">
+
+	<fieldset>
+        
+       	<legend>{legend_resultados}</legend>
+    		
+    	<div id="searchdiv" class="grid_searchdiv">
+		</div>
+    </fieldset>
+</div>
+<!-- END: main-->

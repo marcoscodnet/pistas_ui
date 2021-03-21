@@ -1,0 +1,74 @@
+<rasty-application>
+
+	<!-- declaración de las páginas -->
+	<page name="Login" location="pages/login/Login.page" url="login"/>
+
+	<page name="Artistas"   location="pages/artistas/Artistas.page" url="artistas"/>
+	<page name="ArtistaAgregar"   location="pages/artistas/agregar/ArtistaAgregar.page" url="artistas/agregar"/>
+	<page name="ArtistaModificar"   location="pages/artistas/modificar/ArtistaModificar.page" url="artistas/modificar"/>
+	
+	<page name="Pistas"   location="pages/pistas/Pistas.page" url="pistas"/>
+	<page name="PistaAgregar"   location="pages/pistas/agregar/PistaAgregar.page" url="pistas/agregar"/>
+	<page name="PistaModificar"   location="pages/pistas/modificar/PistaModificar.page" url="pistas/modificar"/>
+	<page name="PistasSinMenu"   location="pages/pistas/PistasSinMenu.page" url="buscarpista"/>
+	<page name="PistasSinMenuNuevo"   location="pages/pistas/PistasSinMenuNuevo.page" url="buscadorpista"/>
+	<page name="PistaConsultar"   location="pages/pistas/consultar/PistaConsultar.page" url="pistas/consultar"/>
+	<page name="PistaConsultarSinMenu"   location="pages/pistas/consultar/PistaConsultarSinMenu.page" url="consultarpista"/>
+
+	<!-- declaración de los componentes -->
+	<component name="HeaderNav" location="components/header" />
+	<component name="HeaderNavMetro" location="components/header" />
+	
+	<component name="FooterPistas" location="components/footer" />
+	
+	
+	<!-- forms -->
+	
+	<component name="ArtistaForm"   location="components/form/artista"/>
+	<component name="PistaForm"   location="components/form/pista"/>
+	<component name="ConsultaForm"   location="components/form/consulta"/>
+	<component name="UploadFile" location="components/form/uploadFile"/>
+	
+	
+	<!-- filters -->
+	
+	<component name="ArtistaFilter"   location="components/filter/artista"/>
+	<component name="PistaFilter"   location="components/filter/pista"/>
+	<component name="PistaSinMenuFilter"   location="components/filter/pista"/>
+	<component name="PistaSinMenuFilterNuevo"   location="components/filter/pista"/>
+	
+	<!--  boxes -->
+	<component name="PistaBox"   location="components/boxes/pista"/>			
+									
+	<!-- layouts -->
+	<component name="PistasMetroLayout" location="layouts" />
+	<component name="PistasLoginMetroLayout" location="layouts" />
+	<component name="PistasHomeMetroLayout" location="layouts" />
+	<component name="PistasMetroSinMenuLayout" location="layouts" />
+	<component name="PistasMetroSinMenuNuevoLayout" location="layouts" />
+	
+	
+	<!-- declaración de las actions -->
+	<action name="Login" class="Pistas\UI\actions\login\Login" url="login"/>
+	<action name="Logout" class="Pistas\UI\actions\login\Logout" url="logout"/>
+
+	
+	<action name="AgregarArtista" class="Pistas\UI\actions\artistas\AgregarArtista" url="artistas/agregar"/>
+	<action name="ModificarArtista" class="Pistas\UI\actions\artistas\ModificarArtista" url="artistas/modificar"/>
+	<action name="EliminarArtista" class="Pistas\UI\actions\artistas\EliminarArtista" url="artistas/eliminar"/>
+	
+	<action name="AgregarPista" class="Pistas\UI\actions\pistas\AgregarPista" url="pistas/agregar"/>
+	<action name="ModificarPista" class="Pistas\UI\actions\pistas\ModificarPista" url="pistas/modificar"/>
+	<action name="EliminarPista" class="Pistas\UI\actions\pistas\EliminarPista" url="pistas/eliminar"/>
+	<action name="ConsultarPista" class="Pistas\UI\actions\pistas\ConsultarPista" url="pistas/consultar"/>
+	<action name="ConsultarPistasJson" class="Pistas\UI\actions\pistas\ConsultarPistasJson" url="pistas/consultar/detalleJson"/>
+	
+	
+	<action name="findEntities" class="Pistas\UI\actions\common\ListarEntitiesJson" url="findEntities"/>
+	<action name="findEntity" class="Pistas\UI\actions\common\GetEntityJson" url="findEntity"/>
+
+	<action name="UploadFile" class="Pistas\UI\components\form\uploadFile\actions\UploadFileJson" url="uploadFile"/>
+	
+	
+		
+</rasty-application>

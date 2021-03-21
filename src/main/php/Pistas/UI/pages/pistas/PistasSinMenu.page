@@ -1,0 +1,13 @@
+<rasty specificationClass="Pistas\UI\pages\pistas\PistasSinMenu" templateLocation="pages/pistas/PistasSinMenu.htm"> 
+
+	<param name="layoutType" value="str:PistasMetroSinMenuLayout" />
+
+	<component id="pistasFilter" type="PistaSinMenuFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:pista.buscar" />
+		<param name="legendAgain" value="msg:pista.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

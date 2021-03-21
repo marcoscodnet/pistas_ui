@@ -1,0 +1,59 @@
+<rasty specificationClass="Pistas\UI\components\form\pista\PistaForm" templateLocation="PistaForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="pista.oid" />
+	</component>
+
+
+	<component id="nombre" type="InputText">
+		<param name="inputId" value="str:nombre" />
+		<param name="name" value="str:nombre" />
+		<param name="value" value="pista.nombre" />
+		<param name="requiredMessage" value="msg:pista.nombre.required" />
+		<param name="placeholder" value="msg:pista.nombre" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	
+	
+	<component id="artista" type="InputFindEntity">
+		<param name="inputId" value="str:artista" />
+		<param name="name" value="str:artista" />
+		<param name="value" value="pista.artista" />
+		<param name="placeholder" value="msg:pista.artista" />
+		<param name="finder" value="artistaFinderClazz" />
+		<param name="hasPopup" value="boolean:true" />
+		<param name="popupFilterType" value="str:ArtistaFilter" />
+		
+	</component>
+	
+	<component id="mp3" type="InputHidden">
+		<param name="inputId" value="str:mp3" />
+		<param name="name" value="str:mp3" />
+		<param name="value" value="pista.mp3" />
+	</component>
+	
+
+	
+	<component id="uploadFile" type="UploadFile">
+		<param name="uploadPath" value="uploadPath" />
+		<param name="uploadWebPath" value="uploadWebPath" />
+		<param name="uploadSuccessCallback" value="str: mp3PistaNewImage " />
+		
+		
+	</component>
+	
+	
+	
+</rasty>

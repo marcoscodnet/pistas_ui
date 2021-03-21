@@ -1,0 +1,173 @@
+{
+"common.campos_obligatorios":"Campos requeridos",
+
+	"app.title":"Pistas Profesionales",
+
+	"app.pdf.footer":"Pistas Profesionales / ",
+	
+	"menu.page":"Opciones de la página",
+	"menu.main":"Menú de navegación",
+	"menu.main.reload":"Actualizar la página",
+	"menu.main.panel":"Panel de trabajo",
+	
+	"menu.admin":"Administración",
+	"menu.admin_home":"Tablero de control",
+	
+	"menu.logout":"Salir del sistema",
+	
+
+	"user.required.exception.msg": "Debe iniciar sesión para operar el sistema", 
+	"invalid.password.exception.msg": "La clave ingresada no es válida",
+	
+	"login.title":"Pistas Profesionales",
+	"login.titulo":"Pistas Profesionales",
+	"login.subtitulo":"Pistas",
+	
+	"login.iniciar_sesion":"Iniciar sesión",
+	"login.username":"Usuario",
+	"login.password":"Clave",
+	"login.ingrese_username":"Ingrese un usuario",
+	"login.ingrese_password":"Ingrese una clave",
+	"login.ingresar":"Comenzar!",
+	"login.invalid_password": "La clave ingresada no es válida",
+	"login.user_not_found": "El usuario ingresado no es válido",
+
+	"admin_home.title": "Pistas Profesionales",
+	"admin_home.subtitle": "Administración",
+	
+	"grid.operaciones": "Operaciones",
+   	"grid.resultados": "Resultados de la búsqueda",
+   	
+   	"entitygrid.pagination.of": "de",
+   	"entitygrid.pagination.next": "siguiente",
+   	"entitygrid.pagination.previous": "anterior",
+    "entitygrid.pagination.first": "primero",
+    "entitygrid.pagination.last": "último",
+
+	
+    "form.aceptar": "Confirmar",
+    "form.cancelar": "Cancelar",
+    "form.volver": "Volver",
+    
+    "filter.buscar": "Buscar",
+    "filter.buscar.again": "Afinar búsqueda...",
+    "filter.resultados": "Resultados de la búsqueda",
+    "filter.opciones": "Opciones",
+    "filter.close.label": "Cerrar",
+ 
+ 	"addpopup.legend":"Agregar",
+    
+    "autocomplete.empty.result": "No se encontraron resultados",
+    "autocomplete.entity.add": "Agregar",
+	
+	"menu.pistas":"Pistas",
+	
+	"menu.artistas":"Artistas",
+	"menu.artistas.listar":"Listado de Artistas",
+	"menu.artistas.agregar":"Agregar Artista",
+	"menu.artistas.modificar":"Modificar Artistas",
+	"menu.artista.eliminar":"Eliminar el Artista",
+	
+	
+	"menu.pistas.listar":"Listado de Pista",
+	"menu.pistas.agregar":"Agregar Pista",
+	"menu.pistas.modificar":"Modificar Pistas",
+	"menu.pista.eliminar":"Eliminar la Pista",
+	
+	
+	"artista.title": "Listado de Artistas",
+	"artista.agregar": "Agregar un artista",
+	"artista.agregar.title": "Agregar un artista",
+	"artista.agregar.legend": "Ingrese un artista",
+	
+	"artista.modificar": "Modificar artista",
+	"artista.modificar.title": "Modificar artista",
+	"artista.modificar.legend": "Modifique el artista",
+	
+	
+	"artista.eliminar.confirm.title": "Eliminar Artista",
+	"artista.eliminar.confirm.msg": "Confirma eliminar el artista seleccionado?",
+	
+	"artista.buscar": "Buscar artistas",
+	"artista.buscar.again": "Afinar búsqueda...",
+	
+	"artista.oid":"Id",
+	"artista.nombre":"Nombre de artista",
+	"artista.nombre.required":"Ingrese un Nombre",
+	
+	"pistas.title": "Listado de Pistas",
+	"pista.agregar": "Agregar una pista",
+	"pista.agregar.title": "Agregar una pista",
+	"pista.agregar.legend": "Ingrese una pista",
+	
+	"pista.modificar": "Modificar pista",
+	"pista.modificar.title": "Modificar pista",
+	"pista.modificar.legend": "Modifique la pista",
+	
+	
+	"pista.eliminar.confirm.title": "Eliminar Pista",
+	"pista.eliminar.confirm.msg": "Confirma eliminar la pista seleccionado?",
+	
+	"pista.buscar": "Buscar pista",
+	"pista.buscar.again": "Afinar búsqueda...",
+	
+	"pista.oid":"Id",
+	"pista.nombre":"Nombre de canci&oacute;n",
+	"pista.nombre.required":"Ingrese un Nombre",
+	"pista.artista":"Artista",
+	"pista.mp3":"Demo",
+	"pista.pistaOArtista":"Nombre de canci&oacute;n o nombre de artista",
+	
+	
+	
+	"uploadFile.legend": "Selecciona un demo",
+    "uploadFile.file": "Demo",
+    
+    
+ 	
+ 	"pista.uploadFile": "Demo",
+ 
+ 	
+ 	"uploadFile.upload": "Subir demo",
+ 	"uploadFile.loading": "Cargando...",
+ 	"file.empty": "Demo vacio",
+ 	"file.invalid.format": "El formato del archivo debe ser .mp3",
+ 	"file.upload.success": "Demo subido exitosamente",
+ 	
+ 	"upload.mp3.error": "Error al subir el demo",
+ 	"upload.mp3.no.subido": "Eligió un Demo pero no lo subió, debe presionar \"Subir demo\" antes de \"Confirmar\"",
+ 	
+ 	"file.no.upload": "Demo NO subido",
+ 	
+ 	"pista.consultar.title": "Consultar Pista",
+ 	"consultarPista.pista.legend": "Pista",
+ 	"pista.consultar.legend": "Enviar consulta",
+ 	
+ 	"consultarPista.confirm": "Confirmar",
+	"consultarPista.cancel": "Cancelar y volver",
+	
+	"consultarPista.nombre": "Nombre",
+	"consultarPista.nombre.required":"Ingrese un Nombre",
+	"consultarPista.mail": "E-mail",
+	"consultarPista.mail.required":"Ingrese un E-mail",
+	"consultarPista.mensaje": "Mensaje",
+	
+	"artista.imagen":"Imagen del artista",
+	"uploadImage.upload": "Subir imagen",
+	"uploadImage.legend": "Selecciona una imagen para el artista",
+    "uploadImage.file": "Imagen",
+ 	"uploadImage.thumbnail_msg": "Recorta la imagen para generar el thumbnail",
+    "uploadImage.thumbnail": "Thumbnail",
+    
+    "uploadImage.loading": "Cargando...",
+    
+    "menu.pistas.consultar":"+ info",
+    
+    "grid.speech": "Hace click en la pista para pedirla",
+    
+    "consultarPista.mail.invalid": "Ingrese un E-mail válido",
+    
+    "consultarPista.envio.exito": "Consulta enviada con éxito"
+   
+
+}

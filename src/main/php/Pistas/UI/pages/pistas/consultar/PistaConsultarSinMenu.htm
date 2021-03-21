@@ -1,0 +1,75 @@
+<!-- BEGIN: main-->
+
+<style>
+
+.pista_left{
+	width: 55%;
+	float:left;
+}
+
+.pista_right{
+	width: 45%;
+	float:right;
+}
+
+.pista_left fieldset{
+	/*padding: 10px 40px;*/
+}
+
+
+
+
+
+
+
+
+
+.pista_left label{
+
+	text-align: left !important;
+}
+
+td.actions, .devolucion button{
+	
+	text-align: center;
+}
+
+table#devoluciones td{
+	border-bottom: 2px solid #D8D8D8 !important;
+    border-right: 1px solid #CCCCCC !important;
+    border-top: 2px solid #FFFFFF !important;
+	
+}
+
+.no-mostrar{
+
+display:none;
+}
+
+.colorRojo{
+	color:red;
+}
+
+</style>
+
+<div id="editar">
+
+	<div align="justify">
+		<p class="titulo">{title}</p>
+	</div>
+
+	<div class="pista_left">
+	<fieldset class="pista">
+		
+		
+		<rasty id="pista" />
+		
+	</fieldset>
+	</div>
+	<div class="pista_right">
+	<fieldset>
+		<rasty id="consultaForm" />
+		</fieldset>
+	
+</div>
+<!-- END: main-->

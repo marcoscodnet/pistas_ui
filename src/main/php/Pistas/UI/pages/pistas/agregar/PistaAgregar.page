@@ -1,0 +1,14 @@
+<rasty specificationClass="Pistas\UI\pages\pistas\agregar\PistaAgregar" templateLocation="pages/pistas/agregar/PistaAgregar.htm"> 
+
+	<param name="layoutType" value="str:PistasMetroLayout" />
+
+	<component id="pistaForm" type="PistaForm">
+		<param name="legend" value="msg:pista.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionAgregarPista" />
+		<param name="method" value="str:post" />
+		<param name="pista" value="pista" />
+	</component>
+	
+</rasty>

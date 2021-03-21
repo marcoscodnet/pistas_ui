@@ -1,0 +1,16 @@
+<rasty specificationClass="Pistas\UI\pages\artistas\modificar\ArtistaModificar" templateLocation="pages/artistas/modificar/ArtistaModificar.htm"> 
+
+	<param name="layoutType" value="str:PistasMetroLayout" />
+	<param name="artistaOid" value="get:oid" />
+
+
+	<component id="artistaForm" type="ArtistaForm">
+		<param name="legend" value="msg:artista.modificar.legend" />
+		<param name="action" value="linkActionModificarArtista" />
+		<param name="method" value="str:post" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="artista" value="artista" />
+	</component>
+	
+</rasty>

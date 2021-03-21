@@ -1,0 +1,154 @@
+<!-- BEGIN: main-->
+<script>
+
+function showUploadedMp3{id}( mp3Name ){
+
+	
+
+	$("#mp3Name{id}").val(mp3Name);	
+	
+	/*$("#uploadedImageContainer{id}").html(img);	
+	
+	$("#uploadedImageDiv{id}").show();*/
+
+	if( "{uploadSuccessCallback}" ){
+		{uploadSuccessCallback}( mp3Name );
+	} 
+
+	
+}
+
+function ajaxFileUpload{id}(){
+
+ 	var res = validate('uploadFile{id}');
+	
+	if( !res ){
+		
+		return;
+	}
+		
+	$("#loadinguploadFile{id}").show();
+
+	$.ajaxFileUpload
+	(
+		{
+			url: '{linkUploadFile}',
+			secureuri:false,
+			fileElementId:'fileToUpload{id}',
+			dataType: 'json',
+			beforeSend:function(){
+				
+			},
+			complete:function(){
+				$("#loadinguploadFile{id}").hide();
+			},				
+			success: function (data, status){
+
+				if( data["error"] != null ){
+
+					console.log(data["error"]);
+					alert(data["error"]);
+					
+				}else{
+					alert(data["info"]);
+					$("#fileName{id}").val(data["fileName"]);	
+					showUploadedMp3{id}(data["fileName"]);
+					//mostramos la imagen para editar el thumbnail
+					
+					
+				}
+			},
+			error: function (data, status, e){
+				console.log(data);
+				console.log(status);
+				console.log(e);
+				$("#loadinguploadFile{id}").hide();
+			}
+		}
+	)
+	
+	return false;
+
+}
+
+
+
+$(document).ready(function(){
+
+	/*
+    $('#fileToUpload{id}').bind('change', function() {
+        alert('This file size is: ' + this.files[0].size/1024/1024 + "MB");
+    });
+    */  
+});
+</script>
+
+<style>
+
+#uploadedFile{id}{
+	cursor:crosshair;
+}
+
+#uploadInputs{id}{
+
+
+
+}
+
+#uploadedFileDiv{id}{
+	max-width: 800px;
+	max-height: 600px;
+	float: left;
+	padding: 20px;
+	overflow: hidden;
+}
+
+
+#uploadedFileDiv{id} h1{
+	color: inherit;
+}
+
+#thumbnailDiv{id}{
+	width: 150px;
+	float: left;
+	padding: 20px;
+	display:none;
+}
+
+</style>
+
+<div>
+	
+	<form id="uploadFile{id}" method="post" enctype="multipart/form-data">
+		
+		<fieldset>
+			<legend>{legend}</legend>
+			
+			
+			<div id="uploadInputs{id}">
+			
+			<input  type='file' id="fileToUpload{id}" name='imgFile' style="height:24px;" id='file' size='40' value="" /> 
+			<div id="loadinguploadFile{id}" style="display:none;">{loading}</div>
+			<br />
+			<a href="#" onclick="ajaxFileUpload{id}();">
+				<img title="{lbl_upload}" alt="{lbl_upload}" src="{WEB_PATH}css/images/upload.png">
+				{lbl_upload}
+			</a>
+			
+			<input type="hidden" name="fileName" id="fileName{id}" value="" />
+			
+			</div>
+
+			
+		
+			
+			
+			<div style="clear: both;"></div>
+			
+		</fieldset>
+	</form>
+	
+	
+	
+</div>
+<!-- END: main-->

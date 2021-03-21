@@ -1,0 +1,17 @@
+<rasty specificationClass="Pistas\UI\components\filter\pista\PistaFilter" templateLocation="PistaFilter.htm">
+
+	<component id="nombre" type="InputText">
+		<param name="name" value="str:nombre" />
+		<param name="value" value="criteria.nombre" />
+		<param name="placeholder" value="msg:pista.nombre" />
+		
+	</component>
+
+	<component id="artista" type="InputText">
+		<param name="name" value="str:artista" />
+		<param name="value" value="criteria.artista" />
+		<param name="placeholder" value="msg:pista.artista" />
+		
+	</component>
+	
+</rasty>

@@ -1,0 +1,44 @@
+<rasty specificationClass="Pistas\UI\components\form\artista\ArtistaForm" templateLocation="ArtistaForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="artista.oid" />
+	</component>
+
+	<component id="imagen" type="InputHidden">
+		<param name="inputId" value="str:imagen" />
+		<param name="name" value="str:imagen" />
+		<param name="value" value="artista.imagen" />
+	</component>
+
+	<component id="nombre" type="InputText">
+		<param name="inputId" value="str:nombre" />
+		<param name="name" value="str:nombre" />
+		<param name="value" value="artista.nombre" />
+		<param name="requiredMessage" value="msg:artista.nombre.required" />
+		<param name="placeholder" value="msg:artista.nombre" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="uploadImage" type="UploadImage">
+		<param name="uploadPath" value="uploadPath" />
+		<param name="uploadWebPath" value="uploadWebPath" />
+		<param name="uploadSuccessCallback" value="str: imagenArtistaNewImage " />
+		<param name="thumbnailSuccessCallback" value="str: imagenArtistaNewThumbnail" />
+		<param name="imageWidth" value="str: 300px " />
+		<param name="thumbnailWidth" value="str: 150 " />
+		<param name="thumbnailHeight" value="str: 150 " />
+		
+	</component>
+	
+</rasty>

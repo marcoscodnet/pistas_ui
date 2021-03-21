@@ -1,0 +1,24 @@
+<rasty specificationClass="Pistas\UI\pages\pistas\consultar\PistaConsultarSinMenu" templateLocation="pages/pistas/consultar/PistaConsultarSinMenu.htm"> 
+
+	<param name="layoutType" value="str:PistasMetroSinMenuNuevoLayout" />
+
+	<param name="pistaOid" value="get:pistaOid" />
+	
+	<param name="error" value="get:error" />
+	
+	
+	
+	
+	<component id="consultaForm" type="ConsultaForm">
+		<param name="legend" value="msg:consulta.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionAgregarConsulta" />
+		<param name="method" value="str:post" />
+		<param name="pista" value="pista" />
+	</component>
+	
+	<component id="pista" type="PistaBox">
+		<param name="pista" value="pista" />
+	</component>
+</rasty>

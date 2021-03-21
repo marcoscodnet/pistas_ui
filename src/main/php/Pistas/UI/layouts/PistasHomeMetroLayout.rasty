@@ -1,0 +1,5 @@
+<rasty specificationClass="Pistas\UI\layouts\PistasHomeMetroLayout" templateLocation="PistasHomeMetroLayout.htm">
+
+	<param name="menuGroups" value="menuGroups" />
+
+</rasty>
